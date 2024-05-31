@@ -91,3 +91,4 @@ make install
 popd
 
 otool -L build/subversion/bin/svn
+# /Users/andrewmead/Projects/macos-standalone-subversion/build/serf/lib/libserf-1.dylib
