@@ -82,7 +82,7 @@ popd
 log_header "Installing Subversion"
 pushd .
 cd source/subversion-1.14.3
-./Configure --with-serf="$SCRIPT_DIR/build/serf" --prefix="$SCRIPT_DIR/build/subversion" --with-sqlite="$SCRIPT_DIR/build/sqlite" --with-apr="$SCRIPT_DIR/build/apr" --with-apr-util="$SCRIPT_DIR/build/apu" --disable-shared --enable-static --with-lz4=internal --with-utf8proc=internal
+./Configure  --enable-static --disable-shared --prefix="$SCRIPT_DIR/build/subversion" --with-serf="$SCRIPT_DIR/build/serf" --with-sqlite="$SCRIPT_DIR/build/sqlite" --with-apr="$SCRIPT_DIR/build/apr" --with-apr-util="$SCRIPT_DIR/build/apu" --with-lz4=internal --with-utf8proc=internal
 make
 make install
 popd
