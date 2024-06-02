@@ -1,6 +1,6 @@
 # Static Subversion Build
 
-The project is a bash script that builds a static portable svn binary.
+A bash script that creates a static svn binary.
 
 # License (MIT)
 
