@@ -1,8 +1,5 @@
 #!/bin/bash
 
-# This script requires scons to be installed
-# On macOS, this script requires the xCode command line tools to be installed
-
 log_header() {
     local input_string="$1"
     echo "--"
