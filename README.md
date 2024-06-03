@@ -1,4 +1,4 @@
-# Static Subversion Build
+# Static Subversion Build for macOS
 
 A bash script that creates a static svn binary.
 
