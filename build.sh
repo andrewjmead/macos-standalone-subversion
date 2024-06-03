@@ -46,7 +46,7 @@ tar -xvzf source/sqlite-autoconf-3460000.tar.gz -C source
 log_header "Downloading Serf"
 curl https://www.apache.org/dist/serf/serf-1.3.10.tar.bz2 -o source/serf-1.3.10.tar.bz2 -L
 bunzip2 source/serf-1.3.10.tar.bz2
-tar -xvzf source/serf-1.3.10.tar -C source
+tar -xvf source/serf-1.3.10.tar -C source
 
 log_header "Downloading Subversion"
 curl https://dlcdn.apache.org/subversion/subversion-1.14.3.tar.gz -o source/subversion-1.14.3.tar.gz
