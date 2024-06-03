@@ -55,7 +55,7 @@ tar -xvzf source/subversion-1.14.3.tar.gz -C source
 log_header "Installing APR"
 pushd .
 cd source/apr-1.7.4
-./Configure --enable-static --disable-shared --prefix="$SCRIPT_DIR/build/apr"
+./confgigure --enable-static --disable-shared --prefix="$SCRIPT_DIR/build/apr"
 make
 make install
 popd
@@ -63,7 +63,7 @@ popd
 log_header "Installing APR-Util"
 pushd .
 cd source/apr-util-1.6.3
-./Configure --enable-static --disable-shared --prefix="$SCRIPT_DIR/build/apu" --with-apr="$SCRIPT_DIR/build/apr"
+./confgigure --enable-static --disable-shared --prefix="$SCRIPT_DIR/build/apu" --with-apr="$SCRIPT_DIR/build/apr"
 make
 make install
 popd
@@ -71,7 +71,7 @@ popd
 log_header "Installing OpenSSL"
 pushd .
 cd source/openssl-3.3.0
-./Configure darwin64-arm64-cc no-shared --prefix="$SCRIPT_DIR/build/openssl"
+./confgigure darwin64-arm64-cc no-shared --prefix="$SCRIPT_DIR/build/openssl"
 make
 make install
 popd
@@ -79,7 +79,7 @@ popd
 log_header "Installing SQLite"
 pushd .
 cd source/sqlite-autoconf-3460000
-./Configure --enable-static --disable-shared --prefix="$SCRIPT_DIR/build/sqlite"
+./confgigure --enable-static --disable-shared --prefix="$SCRIPT_DIR/build/sqlite"
 make
 make install
 popd
@@ -94,7 +94,7 @@ popd
 log_header "Installing Subversion"
 pushd .
 cd source/subversion-1.14.3
-./Configure  --enable-static --disable-shared --prefix="$SCRIPT_DIR/build/subversion" --with-serf="$SCRIPT_DIR/build/serf" --with-sqlite="$SCRIPT_DIR/build/sqlite" --with-apr="$SCRIPT_DIR/build/apr" --with-apr-util="$SCRIPT_DIR/build/apu" --with-lz4=internal --with-utf8proc=internal
+./confgigure  --enable-static --disable-shared --prefix="$SCRIPT_DIR/build/subversion" --with-serf="$SCRIPT_DIR/build/serf" --with-sqlite="$SCRIPT_DIR/build/sqlite" --with-apr="$SCRIPT_DIR/build/apr" --with-apr-util="$SCRIPT_DIR/build/apu" --with-lz4=internal --with-utf8proc=internal
 make
 make install
 popd
