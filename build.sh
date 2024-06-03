@@ -7,6 +7,18 @@ log_header() {
     echo "--"
 }
 
+# Confirm make is available
+if ! command -v make &> /dev/null; then
+    echo "Dependency missing: make is required"
+    exit 1
+fi
+
+# Confirm SCons is available
+if ! command -v scons &> /dev/null; then
+    echo "Dependency missing: scons is required"
+    exit 1
+fi
+
 SCRIPT_DIR=$(dirname "$(realpath "$0")")
 
 rm -rf source
