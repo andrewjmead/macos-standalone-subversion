@@ -7,8 +7,6 @@ A bash script that creates a static svn binary.
 1. Xcode command line tools 
 2. [SCons](https://scons.org/) - It's required to build [Apache Serf](https://serf.apache.org/)
 
-On macOS, you must have the Xcode command line tools installed.
-
 # License (MIT)
 
 Copyright (c) 2024 Andrew Mead
