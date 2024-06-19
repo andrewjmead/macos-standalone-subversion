@@ -98,3 +98,5 @@ cd source/subversion-1.14.3
 make
 make install
 popd
+
+# TODO - Copy the two files and run all the commands so it's not required to do so manually...
